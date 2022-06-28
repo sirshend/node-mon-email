@@ -1,6 +1,6 @@
 import os
 import base64
-while(true):
+while True:
 	os.system("rm text")
 	os.system("wget http://35.193.111.112:9000/status/text")
 	#change the url as needed
