@@ -1,0 +1,28 @@
+  Mode: participating
+  Name: IITK_Node
+--
+  Mode: participating
+  Name: node_crubnsteward1
+--
+  Mode: participating
+  Name: node_crubnsteward2
+--
+  Mode: participating
+  Name: node_crubnsteward3
+--
+  Mode: participating
+  Name: node_crubnsteward4
+  Unreachable_nodes:
+  - - IIITANode
+--
+  Unreachable_nodes:
+  - - IIITANode
+--
+  Unreachable_nodes:
+  - - IIITANode
+--
+  Unreachable_nodes:
+  - - IIITANode
+--
+  Unreachable_nodes:
+  - - IIITANode
