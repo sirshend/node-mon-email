@@ -1,4 +1,5 @@
 import os
+import time
 import base64
 while True:
 	os.system("rm text")
@@ -28,7 +29,7 @@ while True:
 	os.system(mp3)
 	
 	##### checks every 6 hours, so you will get atmost 4 emails per day 
-	sleep(21600)
+	time.sleep(21600)
 
 	
 
