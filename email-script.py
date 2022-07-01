@@ -6,10 +6,14 @@ while True:
 	os.system("wget http://35.193.111.112:9000/status/text")
 	#change the url as needed
 	#This saves the status file in the file named "text"
-	os.system("rm status-file.txt")
-	os.system("touch status-file.txt")
-	os.system("cat text | grep -A 1 Mode: > status-file.txt")
-	os.system("cat text | grep -A 1 Unreachable_nodes: >> status-file.txt")
+	#os.system("rm status-file.txt")
+	#os.system("touch status-file.txt")
+	#os.system("cat text | grep -A 1 Mode: > status-file.txt")
+	#os.system("cat text | grep -A 1 Unreachable_nodes: >> status-file.txt")
+	
+	## Run the bash script to prepare the body of email
+	os.system("chmod +x assist.sh")
+	os.system("./assist.sh")
 	email_text=open("status-file.txt","r")
 	msg=email_text.read()
 	email_text.close()
